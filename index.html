@@ -7,36 +7,82 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="message-container">
-        <div id="message1" class="message">
-            ELLO ELLO ELLOOO, MY<br>[L . . .] 💗
-            
+
+    <div id="secret-phrase">
+        <span class="word" id="word1">@!#!$!</span>
+        <span class="word" id="word2">$%@!</span>
+        <span class="word" id="word3">@#$@#$#%</span>
+        <span class="word" id="word4">@#$</span>
+    </div>
+    
+     <!-- Existing dialogue containers -->
+    <div class="dialogue-container character1">
+        <div id="character-info1">
+            <div id="character-name1">Link</div> <!-- Character Name -->
+            <img id="character-img1" src="src/images/link.jpg" alt="Link">
         </div>
-        
-        <div id="message2" class="message" style="display: none;">
-            Ok, soo 9aloli u going thru alot : 
-            <span id="parentheses">)</span>
-        </div>
-        <div id="message3" class="message" style="display: none; margin-top: 7px;">
-            <span id="type-animation">(chkon 9eli, wait? *cough)</span>
-        </div>
-        <div id="message4" class="message" style="display: none;">
-            So I got you the solution !!
-        </div>
-        <div id="message5" class="message" style="display: none;">
-            A cute lil thing, to cheer you up 🤭
-        </div>
-        <div id="message6" class="message" style="display: none;">
-            So, <span class="highlighted">KWTHR</span> I got you a <span class="challenge">challenge</span>
-        </div>
-        <div id="message7" class="message" style="display: none; margin-top: 7px;">
-            <span id="typing">you down for it?</span>
-            <br><br>
-            <button id="btn" style="display: none;">Heck yeah</button>
+        <div id="speech-bubble1" class="speech-bubble left">
+            <div id="message1" class="message"></div>
         </div>
     </div>
 
-    <span id="heart" style="display: none;" >💗</span>
+    <div class="dialogue-container character2">
+        <div id="speech-bubble2" class="speech-bubble right" style="display: none;">
+            <div id="message2" class="message"></div>
+        </div>
+        <div id="character-info2">
+            <div id="character-name2">Second Character</div> <!-- Character Name -->
+            <img id="character-img2" src="src/images/second_character.jpg" alt="Second Character">
+        </div>
+    </div>
+    <div id="instruction" class="pixel-instruction">Press Space to Start</div>
+
+    <!-- Password Input Section -->
+    <div id="password-section" style="display: none;">
+        <input type="password" id="password-input" placeholder="Enter password" class="pixel-input">
+        <button id="submit-button" class="pixel-button">Submit</button>
+    </div>
+
+    <div class="quest-wrapper">
+        <div id="quest-section" style="display: none;">
+            <p id="quest-question" class="pixel-text">In The Legend of Zelda: Ocarina of Time, which of the following is NOT a dungeon Link must complete? </p>
+            <button id="choice1" class="pixel-button">Forest Temple</button>
+            <button id="choice2" class="pixel-button">Fire Temple</button>
+            <button id="choice" class="pixel-button">Sky Temple</button>
+            <button id="choice3" class="pixel-button">Water Temple</button>
+        </div>
+    </div> 
+
+    <div id="video-container" style="display: none;">
+        <video id="meme-video" width="400">
+            <source src="src/meme.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="quest-wrapper1">
+        <div id="quest-section1" style="display: none;" >
+            <p id="quest-question1" class="pixel-text">What will he say next?</p>
+            <button id="choice11" class="pixel-button">Roof HOT</button>
+            <button id="choicee" class="pixel-button">Roof Burnink WATAFAK</button>
+            <button id="choice22" class="pixel-button">MEOOOOW</button>
+            <button id="choice33" class="pixel-button">Stupid Microwave WATAFAK</button>
+        </div>
+    </div> 
+    <div id="imageContainer" class="image-container" style="display: none;">
+        <h1 id="title">Who's The Goat?</h1>
+        <div class="image-section">
+            <button id="button1" class="image-button">
+                <img id="izem" src="src/izem.png" alt="Image 1">
+            </button>
+            <button id="button2" class="image-button">
+                <img id="rami" src="src/rami1.png" alt="Image 2">
+            </button>
+        </div>
+    </div>
+
+    
+
     <script src="script.js"></script>
 </body>
 </html>
