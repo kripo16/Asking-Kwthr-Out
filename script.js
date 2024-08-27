@@ -502,6 +502,5 @@ window.addEventListener('load', function() {
     // Delay hiding the loader by 2 seconds
     setTimeout(function() {
         document.getElementById('loader').style.display = 'none';
-        loading = false
     }, 3500); // Adjust the delay as needed (2000ms = 2 seconds)
 });
