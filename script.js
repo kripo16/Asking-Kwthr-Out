@@ -490,5 +490,18 @@ document.addEventListener("DOMContentLoaded", function() {
     })
     
     // Start by displaying the first message
-    displayNextMessage();
+    characterInfo2.style.display = "none";
+    characterInfo1.style.display= "none";
+    instruction.style.display = "none";
+    setTimeout(() => {
+        displayNextMessage();
+    }, 3500);
+});
+
+window.addEventListener('load', function() {
+    // Delay hiding the loader by 2 seconds
+    setTimeout(function() {
+        document.getElementById('loader').style.display = 'none';
+        loading = false
+    }, 3500); // Adjust the delay as needed (2000ms = 2 seconds)
 });
